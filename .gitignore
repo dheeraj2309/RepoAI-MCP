@@ -1,0 +1,85 @@
+# ==============================================================================
+# Python Core & Byte-compiled files
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# Environments & Virtual Envs (Poetry, Venv, Pipenv)
+# ==============================================================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.poetry/
+poetry.lock
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================================================================
+# Vector Databases & Local Vector Caches (ChromaDB / FAISS)
+# ==============================================================================
+# Keeps your vector indices and embeddings local to prevent pushing gigabytes of data
+chroma/
+*.chroma
+.chromadb/
+faiss_index/
+*.index
+*.pkl
+*.pickle
+
+# ==============================================================================
+# MCP & LLM Framework Specifics (Claude Desktop / FastMCP Logs)
+# ==============================================================================
+# Ignore local runtime logs, prompts caches, or debug traces
+.mcp/
+mcp_logs/
+*.log
+claude_desktop_output.txt
+.fastmcp/
+
+# ==============================================================================
+# Security & Credentials (CRITICAL for API Keys)
+# ==============================================================================
+# Never commit your OpenAI, Gemini, Claude, or Voyage API tokens
+.env.*
+!.env.example
+secrets.toml
+*.pem
+*.key
+
+# ==============================================================================
+# Code Analysis & IDEs (Jupyter, VS Code, Cursor)
+# ==============================================================================
+.ipynb_checkpoints
+.vscode/
+.cursor/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
